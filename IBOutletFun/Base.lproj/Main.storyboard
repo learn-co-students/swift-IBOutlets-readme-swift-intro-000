@@ -25,20 +25,32 @@
                                 <frame key="frameInset" minX="144" minY="137" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Laters World"/>
+                                <connections>
+                                    <action selector="Latersworld:" destination="ofu-zT-zx9" eventType="touchUpInside" id="WNM-aI-urd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qPu-is-JMI">
                                 <frame key="frameInset" minX="160" minY="186" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Unicorn"/>
+                                <connections>
+                                    <action selector="unicorn:" destination="ofu-zT-zx9" eventType="touchUpInside" id="AYB-S0-kTm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zi7-w9-OHo">
-                                <frame key="frameInset" minX="147" minY="83" width="80" height="30"/>
+                                <frame key="frameInset" minX="147" minY="54" width="80" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Hello World"/>
+                                <connections>
+                                    <action selector="helloWorld:" destination="ofu-zT-zx9" eventType="touchUpInside" id="WqB-Ws-nDn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="textDisplay" destination="1Ut-CL-0YB" id="xe2-c1-Cxh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sI0-Wd-Hwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
