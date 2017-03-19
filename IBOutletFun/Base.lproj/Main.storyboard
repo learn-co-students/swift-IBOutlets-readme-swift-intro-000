@@ -1,13 +1,78 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="dji-hL-1Zh">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12084"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="RGS-9r-6g7">
+            <objects>
+                <viewController id="dji-hL-1Zh" customClass="ViewController" customModule="IBOutletFun" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sAN-6a-zWC"/>
+                        <viewControllerLayoutGuide type="bottom" id="fJe-Z0-h6D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IXG-zF-rsD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nl-Zj-Nay">
+                                <rect key="frame" x="115" y="68" width="91" height="30"/>
+                                <state key="normal" title="Hellow World"/>
+                                <connections>
+                                    <action selector="helloWorld:" destination="dji-hL-1Zh" eventType="touchUpInside" id="PUR-bv-qqA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFa-qP-6Ds">
+                                <rect key="frame" x="107" y="114" width="107" height="30"/>
+                                <state key="normal" title="Goodbye World"/>
+                                <connections>
+                                    <action selector="goodbyeWorld:" destination="dji-hL-1Zh" eventType="touchUpInside" id="83E-Lq-rT8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FH8-T3-p3H">
+                                <rect key="frame" x="130.5" y="163" width="59" height="30"/>
+                                <state key="normal" title="Unicorn!"/>
+                                <connections>
+                                    <action selector="unicorn:" destination="dji-hL-1Zh" eventType="touchUpInside" id="7EH-cA-h6W"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUT-ec-Hrc">
+                                <rect key="frame" x="139" y="240" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FH8-T3-p3H" firstAttribute="centerX" secondItem="IXG-zF-rsD" secondAttribute="centerX" id="36o-6N-fDv"/>
+                            <constraint firstItem="0nl-Zj-Nay" firstAttribute="top" secondItem="sAN-6a-zWC" secondAttribute="bottom" constant="48" id="7PX-lE-i0k"/>
+                            <constraint firstItem="BFa-qP-6Ds" firstAttribute="top" secondItem="sAN-6a-zWC" secondAttribute="bottom" constant="94" id="8ge-cV-vkD"/>
+                            <constraint firstItem="FH8-T3-p3H" firstAttribute="top" secondItem="sAN-6a-zWC" secondAttribute="bottom" constant="143" id="CmH-fh-QO2"/>
+                            <constraint firstItem="NUT-ec-Hrc" firstAttribute="centerX" secondItem="IXG-zF-rsD" secondAttribute="centerX" id="LJ3-pW-GAk"/>
+                            <constraint firstItem="NUT-ec-Hrc" firstAttribute="top" secondItem="sAN-6a-zWC" secondAttribute="bottom" constant="220" id="VWE-yS-7AF"/>
+                            <constraint firstItem="0nl-Zj-Nay" firstAttribute="centerX" secondItem="IXG-zF-rsD" secondAttribute="centerX" id="lZ9-t9-jLT"/>
+                            <constraint firstItem="BFa-qP-6Ds" firstAttribute="centerX" secondItem="IXG-zF-rsD" secondAttribute="centerX" id="len-rT-x9O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textDisplay" destination="NUT-ec-Hrc" id="wHk-ai-uyA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0d0-J2-ypF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8" y="11"/>
+        </scene>
+    </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
