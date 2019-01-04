@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textDisplay: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -18,7 +19,25 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-
-   
+    @IBAction func helloWorld(_ sender: Any) {
+        
+        print ("Hello World Pressed!")
+        textDisplay.text = "Hello World!!"
+        
+    }
+    
+    @IBAction func goodByeWorld(_ sender: Any) {
+        
+        print("Good Bye button Pressed!!")
+        textDisplay.text = "Goodbye World!!"
+    }
+    
+    @IBAction func unicorn(_ sender: Any) {
+        
+        print("Unicorn Button Pressed!!")
+        textDisplay.text = "🦄"
+    
+    }
+    
 
 }
